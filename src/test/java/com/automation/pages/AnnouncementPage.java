@@ -108,7 +108,6 @@ public class AnnouncementPage extends AbstractBasePage{
 
     public void clickAnnouncement(){
         BrowserUtils.waitForPageToLoad(15);
-        wait.until(ExpectedConditions.elementToBeClickable(more)).click();
         wait.until(ExpectedConditions.elementToBeClickable(announcement)).click();
     }
 

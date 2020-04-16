@@ -19,6 +19,7 @@ public class AnnouncementTest extends AbstractBaseTest {
 
         loginPage.login();
         extentTest.info("Login successfully");
+        announcementPage.navigateTo("More");
         announcementPage.clickAnnouncement();
 
         Assert.assertTrue(announcementPage.announcementTitle().equals("Topic"));
